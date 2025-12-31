@@ -6,6 +6,7 @@ interface ColumnProps {
   column: {
     id: string;
     title: string;
+    color?: string;
     taskIds: string[];
   };
   tasks: Array<{ id: string; content: string }>;
@@ -13,7 +14,7 @@ interface ColumnProps {
 
 const Column: React.FC<ColumnProps> = ({ column, tasks }) => {
   return (
-    <div className="column-container">
+    <div className="column-container" style={{ backgroundColor: column.color }}>
       <h3 className="column-title">{column.title}</h3>
       <Droppable droppableId={column.id}>
         {(provided, snapshot) => (

@@ -9,16 +9,19 @@ const initialData = {
     "column-1": {
       id: "column-1",
       title: "to do",
+      color: "#e0e0e0", // Light Gray
       taskIds: ["task-1", "task-2", "task-3", "task-4"],
     },
     "column-2": {
       id: "column-2",
       title: "in progress",
+      color: "#fff3cd", // Light Yellow
       taskIds: [],
     },
     "column-3": {
       id: "column-3",
       title: "done",
+      color: "#d4edda", // Light Green
       taskIds: [],
     },
   },
